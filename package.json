@@ -1,0 +1,33 @@
+{
+    "author": {
+        "email": "rreinold@clearblade.com"
+    },
+    "clouds": [],
+    "description": "Transactional Email API Service For Developers",
+    "domains": [],
+    "gateways": [],
+    "image_url": "https://docs.clearblade.com/v/3/static/img/default_package.png",
+    "keywords": [
+        "clearblade",
+        "iot",
+        "platform",
+        "email",
+        "mail",
+        "mailgun",
+        "alerts",
+        "notifications",
+        "subject",
+        "body",
+        "alert",
+        "update",
+        "updates",
+        "newsletter"
+    ],
+    "license": "MIT",
+    "name": "mailgun",
+    "private": false,
+    "prog_lang": [],
+    "protocols": [],
+    "things": [],
+    "version": "1.0.0"
+}
