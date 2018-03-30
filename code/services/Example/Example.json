@@ -1,0 +1,10 @@
+{
+    "current_version": 41,
+    "dependencies": "Mailgun,log",
+    "logging_enabled": "true",
+    "name": "Example",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "Example.js"
+}
