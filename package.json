@@ -1,12 +1,13 @@
 {
     "author": {
-        "email": "rreinold@clearblade.com"
+        "email": "rob@clearblade.com"
     },
     "clouds": [],
     "description": "Transactional Email API Service For Developers",
     "domains": [],
     "gateways": [],
-    "image_url": "https://docs.clearblade.com/v/3/static/img/default_package.png",
+    "asset_types":["Code Libraries"],
+    "image_url": "http://www.mailgun.com/wp-content/uploads/2017/05/mailgun.png",
     "keywords": [
         "clearblade",
         "iot",
