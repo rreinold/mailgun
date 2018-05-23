@@ -34,8 +34,7 @@
       * })
       */
      function send(body, subject, recipient, callback){
-         formattedRecipient = format(recipient)
-
+         
         var options = {
             auth: {
                 user: "api",
@@ -59,11 +58,6 @@
                 callback(data)
             }
         })
-     }
-     
-     // formats 'rreinold@clearblade' to '<rreinold@clearblade.com'
-     function format(recipient){
-         return '<' + recipient + '>'
      }
      
      return {

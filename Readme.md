@@ -31,6 +31,7 @@ This ipm-package is used to send emails effortlessly using a mailgun API. It is 
 `MailgunLib` - Library for sending emails through Mailgun's REST API. The library can be used using the **Mailgun** object. 
 
 `MailgunConstants` - A constants library to have a centralized location for constants like API-key.
+
 ## API
 ### Typedefs
 
@@ -90,11 +91,10 @@ var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
 var body = "Sample body";
 var subject = "Mailgun IPM Package";
 var recipient = "Bob <bob@host.com>";
-
 mailgun.send(body, subject, recipient, function(err, data){
     if(err){
         resp.error(err)
     }
     resp.success(data)
-});
+})
 ```
