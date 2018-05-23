@@ -14,14 +14,16 @@ This is an ipm package, which contains one or more reusable assets within the ip
 Create an API key at [https://www.mailgun.com/](https://www.mailgun.com/)
 
 ## Usage
+This ipm-package is used to send emails effortlessly using a mailgun API. It is extensible, more features can be added into the library.
 
+## Assets
 ### Code Services
 
-`MailgunExampleSend` - Sends an MailgunExampleSend email thru Mailgun library
+`MailgunExampleSend` - Sends an MailgunExampleSend email through Mailgun library
 
 ### Code Libraries
 
-`Mailgun` - Library for sending emails thru Mailgun's REST API
+`Mailgun` - Library for sending emails through Mailgun's REST API. The library can be used using the **Mailgun** object. 
 
 ## API
 ### Typedefs
