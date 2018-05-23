@@ -2,9 +2,9 @@
     "current_version": 41,
     "dependencies": "Mailgun,log",
     "logging_enabled": "true",
-    "name": "Example",
+    "name": "MailgunExampleSend",
     "params": [],
     "permissions": {},
     "run_user": "",
-    "source": "Example.js"
+    "source": "MailgunExampleSend.js"
 }

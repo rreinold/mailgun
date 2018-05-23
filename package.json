@@ -1,7 +1,5 @@
 {
-    "author": {
-        "email": "rob@clearblade.com"
-    },
+    "author":  "Rob Reinold <rob@clearblade.com>",
     "clouds": [],
     "description": "Transactional Email API Service For Developers",
     "domains": [],
@@ -27,8 +25,26 @@
     "license": "MIT",
     "name": "mailgun",
     "private": false,
-    "prog_lang": [],
-    "protocols": [],
+    "prog_lang": ["javascript"],
+    "protocols": ["REST"],
     "things": [],
-    "version": "1.0.0"
+    "version": "1.1.0",
+    "dependencies": {
+        "http": "latest"
+    },
+    "scripts": {
+        "jsdoc": "jsdoc2md code/libraries/*/*.js > jsdoc.md"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rreinold/mailgun.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rreinold/mailgun/issues"
+    },
+    "homepage": "https://github.com/rreinold/mailgun#readme",
+    "devDependencies": {
+        "jsdoc-to-markdown": "^4.0.1"
+    }
+
 }

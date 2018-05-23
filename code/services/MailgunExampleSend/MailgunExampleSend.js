@@ -1,8 +1,8 @@
 /**
  * Send an email using Mailgun Library
- * 
+ * https://documentation.mailgun.com/en/latest/api-sending.html#sending
  */
- function Example(req, resp){
+ function MailgunExampleSend(req, resp){
     
     // Configuration comes from your account credentials on https://www.mailgun.com/
     

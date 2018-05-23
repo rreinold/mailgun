@@ -1,9 +1,11 @@
 /**
  * Mailgun - Send emails via Mailgun REST API
- * @typedef Mailgun
- * @param {string} apikey API Key found in Mailgun Console (https://www.mailgun.com/)
- * @param {string} domain Domain ex. mg.yoursite.com, provided by Mailgun
- * @param {string} originEmail origin address from which to send emails, provided by Mailgun
+ * https://documentation.mailgun.com/en/latest/api_reference.html
+ * 
+ * @typedef {Object} Mailgun
+ * @param {string} apikey - API Key found in Mailgun Console (https://www.mailgun.com/)
+ * @param {string} domain - Domain ex. mg.yoursite.com, provided by Mailgun
+ * @param {string} originEmail - origin address from which to send emails, provided by Mailgun
  */
  function Mailgun(apiKey, domain, originEmail){
      
@@ -11,10 +13,22 @@
          throw new Error("Invalid configuration - must provide apiKey, domain, and originEmail. Can be acquired on Mailgun account home.")
      }
      /**
+      * This method is used to send an email with subject and body and other components can be added. Refer to the mailgun api https://documentation.mailgun.com/en/latest/api-sending.html#sending
+      * 
       * @memberof Mailgun
       * @param {string} body
       * @param {string} subject
       * @param {string} recipient
+      * 
+      * @example
+      * 
+      * var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
+      * mailgun.send("Sample body","Mailgun IPM Package", RECIPIENT_EMAIL, function(err, data){
+      *     if(err){
+      *         resp.error(err)
+      *     }
+      *     resp.success(data)
+      * })
       */
      function send(body, subject, recipient, callback){
          formattedRecipient = format(recipient)
@@ -54,3 +68,10 @@
      }
      
  }
+
+ /**
+* This callback is displayed as part of sgEmail.
+* @callback callback
+* @param {Object} err
+* @param {Object} resp
+*/

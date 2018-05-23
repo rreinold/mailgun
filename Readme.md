@@ -17,16 +17,42 @@ Create an API key at [https://www.mailgun.com/](https://www.mailgun.com/)
 
 ### Code Services
 
-`Example` - Sends an example email thru Mailgun library
+`MailgunExampleSend` - Sends an MailgunExampleSend email thru Mailgun library
 
 ### Code Libraries
 
 `Mailgun` - Library for sending emails thru Mailgun's REST API
 
 ## API
+### Typedefs
 
-### Mailgun
+<dl>
+<dt><a href="#callback">callback</a> : <code>function</code></dt>
+<dd><p>This callback is displayed as part of sgEmail.</p>
+</dd>
+<dt><a href="#Mailgun">Mailgun</a> : <code>Object</code></dt>
+<dd><p>Mailgun - Send emails via Mailgun REST API
+<a href="https://documentation.mailgun.com/en/latest/api_reference.html">https://documentation.mailgun.com/en/latest/api_reference.html</a></p>
+</dd>
+</dl>
+
+<a name="callback"></a>
+
+### callback : <code>function</code>
+This callback is displayed as part of sgEmail.
+
+**Kind**: global typedef  
+
+| Param | Type |
+| --- | --- |
+| err | <code>Object</code> | 
+| resp | <code>Object</code> | 
+
+<a name="Mailgun"></a>
+
+### Mailgun : <code>Object</code>
 Mailgun - Send emails via Mailgun REST API
+https://documentation.mailgun.com/en/latest/api_reference.html
 
 **Kind**: global typedef  
 
@@ -39,6 +65,8 @@ Mailgun - Send emails via Mailgun REST API
 <a name="Mailgun.send"></a>
 
 #### Mailgun.send(body, subject, recipient)
+This method is used to send an email with subject and body and other components can be added. Refer to the mailgun api https://documentation.mailgun.com/en/latest/api-sending.html#sending
+
 **Kind**: static method of [<code>Mailgun</code>](#Mailgun)  
 
 | Param | Type |
@@ -47,8 +75,13 @@ Mailgun - Send emails via Mailgun REST API
 | subject | <code>string</code> | 
 | recipient | <code>string</code> | 
 
-
-## Thank you
-
-Powered by ClearBlade Enterprise IoT Platform: [https://platform.clearblade.com](https://platform.clearblade.com)
-<a name="Mailgun"></a>
+**Example**  
+```js
+var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
+mailgun.send("Sample body","Mailgun IPM Package", RECIPIENT_EMAIL, function(err, data){
+    if(err){
+        resp.error(err)
+    }
+    resp.success(data)
+})
+```
