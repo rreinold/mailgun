@@ -23,7 +23,10 @@
       * @example
       * 
       * var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
-      * mailgun.send("Sample body","Mailgun IPM Package", RECIPIENT_EMAIL, function(err, data){
+      * var body = "Sample body";
+      * var subject = "Mailgun IPM Package";
+      * var recipient = "Bob <bob@host.com>";
+      * mailgun.send(body, subject, recipient, function(err, data){
       *     if(err){
       *         resp.error(err)
       *     }
