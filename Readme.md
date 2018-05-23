@@ -66,7 +66,7 @@ https://documentation.mailgun.com/en/latest/api_reference.html
 
 | Param | Type | Description |
 | --- | --- | --- |
-| apikey | <code>string</code> | API Key found in Mailgun Console (https://www.mailgun.com/) |
+| apiKey | <code>string</code> | API Key found in Mailgun Console (https://www.mailgun.com/) |
 | domain | <code>string</code> | Domain ex. mg.yoursite.com, provided by Mailgun |
 | originEmail | <code>string</code> | origin address from which to send emails, provided by Mailgun |
 
