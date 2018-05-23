@@ -19,12 +19,18 @@ This ipm-package is used to send emails effortlessly using a mailgun API. It is 
 ## Assets
 ### Code Services
 
+#### Example
 `MailgunExampleSend` - Sends an MailgunExampleSend email through Mailgun library
+
+#### Test
+
+`MailgunTestSetup` - Tests if the constants for mailgun package are set or not. 
 
 ### Code Libraries
 
-`Mailgun` - Library for sending emails through Mailgun's REST API. The library can be used using the **Mailgun** object. 
+`MailgunLib` - Library for sending emails through Mailgun's REST API. The library can be used using the **Mailgun** object. 
 
+`MailgunConstants` - A constants library to have a centralized location for constants like API-key.
 ## API
 ### Typedefs
 
@@ -78,6 +84,7 @@ This method is used to send an email with subject and body and other components 
 | recipient | <code>string</code> | 
 
 **Example**  
+
 ```js
 var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
 var body = "Sample body";

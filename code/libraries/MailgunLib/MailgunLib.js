@@ -3,7 +3,7 @@
  * https://documentation.mailgun.com/en/latest/api_reference.html
  * 
  * @typedef {Object} Mailgun
- * @param {string} apikey - API Key found in Mailgun Console (https://www.mailgun.com/)
+ * @param {string} apiKey - API Key found in Mailgun Console (https://www.mailgun.com/)
  * @param {string} domain - Domain ex. mg.yoursite.com, provided by Mailgun
  * @param {string} originEmail - origin address from which to send emails, provided by Mailgun
  */
