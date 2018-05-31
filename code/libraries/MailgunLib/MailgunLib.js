@@ -6,6 +6,11 @@
  * @param {string} apiKey - API Key found in Mailgun Console (https://www.mailgun.com/)
  * @param {string} domain - Domain ex. mg.yoursite.com, provided by Mailgun
  * @param {string} originEmail - origin address from which to send emails, provided by Mailgun
+ * 
+ * @example
+ * var mgconf = MAILGUN_CONFIG;
+ * var mailgun = Mailgun(mgconf.API_KEY, mgconf.DOMAIN, mgconf.ORIGIN_EMAIL);
+ * 
  */
  function Mailgun(apiKey, domain, originEmail){
      
@@ -22,7 +27,8 @@
       * 
       * @example
       * 
-      * var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
+      * var mgconf = MAILGUN_CONFIG;
+      * var mailgun = Mailgun(mgconf.API_KEY, mgconf.DOMAIN, mgconf.ORIGIN_EMAIL)
       * var body = "Sample body";
       * var subject = "Mailgun IPM Package";
       * var recipient = "Bob <bob@host.com>";

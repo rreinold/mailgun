@@ -33,7 +33,6 @@ This ipm-package is used to send emails effortlessly using a mailgun API. It is 
 `MailgunConstants` - A constants library to have a centralized location for constants like API-key.
 
 ## API
-
 ### Typedefs
 
 <dl>
@@ -88,7 +87,8 @@ This method is used to send an email with subject and body and other components 
 **Example**  
 
 ```js
-var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
+var mgconf = MAILGUN_CONFIG;
+var mailgun = Mailgun(mgconf.API_KEY, mgconf.DOMAIN, mgconf.ORIGIN_EMAIL)
 var body = "Sample body";
 var subject = "Mailgun IPM Package";
 var recipient = "Bob <bob@host.com>";

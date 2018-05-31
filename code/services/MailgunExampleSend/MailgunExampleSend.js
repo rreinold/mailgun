@@ -5,7 +5,8 @@
 function MailgunExampleSend(req, resp) {
 
     // The constants needs to be setup in the MailgunConstants Library
-    var mailgun = Mailgun(API_KEY, DOMAIN, ORIGIN_EMAIL)
+    var mgconf = MAILGUN_CONFIG;
+    var mailgun = Mailgun(mgconf.API_KEY, mgconf.DOMAIN, mgconf.ORIGIN_EMAIL)
     var body = "Sample body";
     var subject = "Mailgun IPM Package";
     var recipient = "Bob <bob@host.com>";
