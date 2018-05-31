@@ -1,6 +1,6 @@
 
 /**
- * This service just ensures whether the MailgunConstants are set or not.
+ * This service ensures MailgunConstants are set.
  */
 function MailgunTestSetup(req, resp){
     

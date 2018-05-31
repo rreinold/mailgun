@@ -24,7 +24,7 @@ This ipm-package is used to send emails effortlessly using a mailgun API. It is 
 
 #### Test
 
-`MailgunTestSetup` - Tests if the constants for mailgun package are set or not. 
+`MailgunTestSetup` - Ensures MailgunConstants are set.
 
 ### Code Libraries
 
@@ -33,11 +33,12 @@ This ipm-package is used to send emails effortlessly using a mailgun API. It is 
 `MailgunConstants` - A constants library to have a centralized location for constants like API-key.
 
 ## API
+
 ### Typedefs
 
 <dl>
 <dt><a href="#callback">callback</a> : <code>function</code></dt>
-<dd><p>This callback is displayed as part of sgEmail.</p>
+<dd><p>This callback is displayed as part of this library.</p>
 </dd>
 <dt><a href="#Mailgun">Mailgun</a> : <code>Object</code></dt>
 <dd><p>Mailgun - Send emails via Mailgun REST API
@@ -48,7 +49,7 @@ This ipm-package is used to send emails effortlessly using a mailgun API. It is 
 <a name="callback"></a>
 
 ### callback : <code>function</code>
-This callback is displayed as part of sgEmail.
+This callback is displayed as part of this library.
 
 **Kind**: global typedef  
 
@@ -78,11 +79,11 @@ This method is used to send an email with subject and body and other components 
 
 **Kind**: static method of [<code>Mailgun</code>](#Mailgun)  
 
-| Param | Type |
-| --- | --- |
-| body | <code>string</code> | 
-| subject | <code>string</code> | 
-| recipient | <code>string</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| body | <code>string</code> | the body of the email |
+| subject | <code>string</code> | the subject of the email |
+| recipient | <code>string</code> | the recipient of the email |
 
 **Example**  
 

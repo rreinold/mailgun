@@ -16,9 +16,9 @@
       * This method is used to send an email with subject and body and other components can be added. Refer to the mailgun api https://documentation.mailgun.com/en/latest/api-sending.html#sending
       * 
       * @memberof Mailgun
-      * @param {string} body
-      * @param {string} subject
-      * @param {string} recipient
+      * @param {string} body - the body of the email
+      * @param {string} subject - the subject of the email
+      * @param {string} recipient - the recipient of the email
       * 
       * @example
       * 
@@ -67,7 +67,7 @@
  }
 
  /**
-* This callback is displayed as part of sgEmail.
+* This callback is displayed as part of this library.
 * @callback callback
 * @param {Object} err
 * @param {Object} resp
