@@ -2,7 +2,7 @@
     "api": "",
     "dependencies": "http",
     "description": "Transactional Email API Service For Developers",
-    "name": "Mailgun",
-    "version": 48,
+    "name": "MailgunLib",
+    "version": 3,
     "visibility": "system"
 }

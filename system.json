@@ -3,8 +3,8 @@
     "deployments": [],
     "description": "Transactional Email API Service For Developers",
     "messaging_url": "staging.clearblade.com:1883",
-    "name": "PackageDev_Mailgun",
+    "name": "mailgun",
     "platform_url": "https://staging.clearblade.com",
-    "system_key": "c2c5f4ab0bccef91e3c0979ff2c801",
-    "system_secret": "C2C5F4AB0BAA93E3ABCA92DEBB76"
+    "system_key": "",
+    "system_secret": ""
 }
